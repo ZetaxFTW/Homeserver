@@ -16,6 +16,7 @@ export default function Home() {
             setSpotifyonline(await isReachable('spotify.zetax.dev'));
             setNginxonline(await isReachable('http://132.145.242.159:3000'));
             setStatusonline(await isReachable('http://132.145.242.159:3001'));
+            setStatusonline(await isReachable('http://132.145.242.159:9443'));
         })();
     }, [])
 
