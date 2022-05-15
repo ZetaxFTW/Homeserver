@@ -61,6 +61,17 @@ export default function Home() {
                   <p className="text-center">Status page for my websites</p>
               </div>
           </a>
+          <a href="http://132.145.242.159:9443">
+              <div className="w-fit border-2 h-fit px-6 py-4 rounded-lg bg-gray-200 border-2 border-gray-300 mx-4 hover:bg-gray-300 w-72 my-4 dark:text-white dark:bg-gray-700 dark:border-indigo-400 dark:hover:bg-gray-800">
+                  <HiOutlineStatusOnline className="text-3xl text-indigo-400 mx-auto my-2" />
+                  <h2 className="text-center font-semibold text-lg">Portainer Web</h2>
+                  <p className="text-center text-gray-300 my-4">
+                      {statusonline ? <HiOutlineStatusOnline className="text-green-400 mx-auto my-2" /> : <HiOutlineStatusOffline className="text-red-400 mx-auto my-2" />}
+                      {statusonline ? 'Online' : 'Offline'}
+                  </p>
+                  <p className="text-center">Panel to manage all docker containers</p>
+              </div>
+          </a>
       </div>
     </div>
   )
